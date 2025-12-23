@@ -1,25 +1,29 @@
 {
   "brand": {
-    "name": "Professional Consulting Studio",
-    "title": "Professional Services",
-    "tagline": "Helping people grow with clarity and confidence",
+    "name": "Charbel",
+    "title": "Psychologist & Consultant",
+    "tagline": "Practical support for clarity, growth, and balance",
     "logo": "/logo.svg"
   },
   "hero": {
-    "headline": "Personalized Professional Support",
-    "subheadline": "A modern solution for consultants, coaches, and therapists",
-    "image": "/placeholder/hero.svg",
-    "ctaText": "Contact Us"
+    "headline": "Professional Psychological & Consulting Services",
+    "subheadline": "Personalized sessions designed to help you move forward",
+    "ctaText": "Book on WhatsApp",
+    "image": "/placeholder/hero.svg"
   },
   "about": {
     "title": "About Me",
-    "description": "This is a short professional bio. Replace this text from the config file without touching code.",
+    "description": "I am a psychologist and consultant offering professional support through personalized sessions focused on mental clarity, emotional balance, and personal growth.",
     "image": "/placeholder/avatar.svg"
   },
   "services": [
     {
-      "title": "One-on-One Sessions",
-      "description": "Personalized sessions focused on growth and clarity."
+      "title": "Individual Sessions",
+      "description": "One-on-one sessions focused on personal growth and emotional wellbeing."
+    },
+    {
+      "title": "Consulting Sessions",
+      "description": "Professional guidance for decision-making, stress management, and clarity."
     },
     {
       "title": "Online Consultations",
@@ -29,8 +33,8 @@
   "contact": {
     "email": "hello@demo-site.com",
     "phone": "+000 000 000",
-    "location": "City, Country",
-    "whatsapp": "+000000000"
+    "whatsapp": "+96170126177",
+    "location": "Lebanon"
   },
-  "niche": "consultant"
+  "niche": "psychologist"
 }
