@@ -1,15 +1,15 @@
 {
   "brand": {
-    "name": "Your Brand Name",
+    "name": "Professional Consulting Studio",
     "title": "Professional Services",
-    "tagline": "Helping people move forward",
+    "tagline": "Helping people grow with clarity and confidence",
     "logo": "/logo.svg"
   },
   "hero": {
-    "headline": "Personalized Sessions That Make a Difference",
-    "subheadline": "Professional support tailored to your needs",
+    "headline": "Personalized Professional Support",
+    "subheadline": "A modern solution for consultants, coaches, and therapists",
     "image": "/placeholder/hero.svg",
-    "ctaText": "Book a Session"
+    "ctaText": "Contact Us"
   },
   "about": {
     "title": "About Me",
@@ -27,10 +27,10 @@
     }
   ],
   "contact": {
-    "email": "hello@example.com",
+    "email": "hello@demo-site.com",
     "phone": "+000 000 000",
     "location": "City, Country",
     "whatsapp": "+000000000"
   },
-  "niche": "therapist"
+  "niche": "consultant"
 }
