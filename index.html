@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Viewport: Mobile-first, fullscreen, handle notches and safe areas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, maximum-scale=1.0"
+    />
+    <meta name="theme-color" content="#D94C2E" />
+
+    <!-- Document Info -->
+    <title>Professional Services – Your Expertise</title>
+    <meta
+      name="description"
+      content="A professional website template for therapists, coaches, and consultants."
+    />
+    <meta name="author" content="Professional Services" />
+    <meta
+      name="keywords"
+      content="professional services, therapist, coach, consultant, online sessions, counseling template"
+    />
+
+    <!-- PWA & App Integration -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Professional" />
+    <!-- App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/icon-96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Professional Services – Your Expertise"
+    />
+    <meta
+      property="og:description"
+      content="A professional website template for therapists, coaches, and consultants."
+    />
+    <meta property="og:image" content="/icon-512.png" />
+    <meta property="og:url" content="/" />
+    <meta property="og:site_name" content="Professional Services" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Professional Services – Your Expertise"
+    />
+    <meta
+      name="twitter:description"
+      content="A professional website template for therapists, coaches, and consultants."
+    />
+    <meta name="twitter:image" content="/icon-512.png" />
+
+    <!-- iOS Safe Area & Notch Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- Performance & Security -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Preconnect to external services -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js", { scope: "/" })
+            .then((reg) => console.log("Service Worker registered:", reg))
+            .catch((err) =>
+              console.warn("Service Worker registration failed:", err)
+            );
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm coral/peach/terracotta life palette */
+    --background: 30 40% 98%;
+    --foreground: 20 25% 15%;
+
+    --card: 30 35% 99%;
+    --card-foreground: 20 25% 15%;
+
+    --popover: 30 35% 99%;
+    --popover-foreground: 20 25% 15%;
+
+    /* Warm terracotta primary */
+    --primary: 16 65% 55%;
+    --primary-foreground: 30 40% 98%;
+    --primary-light: 20 55% 92%;
+    --primary-dark: 16 65% 42%;
+
+    /* Soft peach secondary */
+    --secondary: 25 45% 94%;
+    --secondary-foreground: 20 25% 20%;
+
+    /* Muted warm */
+    --muted: 25 20% 92%;
+    --muted-foreground: 20 15% 45%;
+
+    /* Coral accent */
+    --accent: 12 50% 92%;
+    --accent-foreground: 12 45% 35%;
+    --accent-rose: 12 55% 70%;
+    --accent-rose-dark: 12 55% 50%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 25% 88%;
+    --input: 25 25% 88%;
+    --ring: 16 65% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom life tokens */
+    --cream: 35 40% 96%;
+    --cream-dark: 30 35% 92%;
+    --sage: 16 65% 55%;
+    --sage-light: 20 55% 88%;
+    --sage-dark: 16 65% 40%;
+    --charcoal: 20 25% 15%;
+    --charcoal-light: 20 20% 35%;
+    --rose: 12 55% 70%;
+    --rose-light: 12 50% 92%;
+    --rose-dark: 12 55% 50%;
+    --gold: 38 75% 50%;
+    --gold-light: 38 65% 85%;
+    --terracotta: 16 65% 55%;
+    --peach: 25 60% 85%;
+    --coral: 12 55% 65%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(30 40% 98%) 0%,
+      hsl(25 50% 95%) 50%,
+      hsl(12 45% 96%) 100%
+    );
+    --gradient-card: linear-gradient(
+      180deg,
+      hsl(30 35% 99%) 0%,
+      hsl(25 40% 97%) 100%
+    );
+    --gradient-sage: linear-gradient(
+      135deg,
+      hsl(20 55% 85%) 0%,
+      hsl(16 65% 55%) 100%
+    );
+    --gradient-warm: linear-gradient(
+      135deg,
+      hsl(25 45% 94%) 0%,
+      hsl(12 45% 95%) 100%
+    );
+
+    /* Shadows */
+    --shadow-soft: 0 2px 20px -5px hsl(220 20% 15% / 0.08);
+    --shadow-medium: 0 8px 30px -10px hsl(220 20% 15% / 0.12);
+    --shadow-elevated: 0 20px 50px -20px hsl(220 20% 15% / 0.15);
+    --shadow-glow: 0 0 40px hsl(135 18% 52% / 0.15);
+
+    /* Sidebar */
+    --sidebar-background: 40 30% 99%;
+    --sidebar-foreground: 220 20% 25%;
+    --sidebar-primary: 135 18% 52%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 135 15% 92%;
+    --sidebar-accent-foreground: 220 20% 20%;
+    --sidebar-border: 135 15% 88%;
+    --sidebar-ring: 135 18% 52%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 40 20% 95%;
+
+    --card: 220 18% 13%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 220 18% 13%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 135 25% 60%;
+    --primary-foreground: 220 20% 10%;
+    --primary-light: 135 20% 25%;
+    --primary-dark: 135 25% 70%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 40 15% 60%;
+
+    --accent: 350 25% 20%;
+    --accent-foreground: 350 35% 80%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 135 25% 60%;
+
+    --cream: 220 15% 15%;
+    --cream-dark: 220 18% 12%;
+    --sage: 135 25% 60%;
+    --sage-light: 135 20% 25%;
+    --sage-dark: 135 25% 70%;
+    --charcoal: 40 20% 95%;
+    --charcoal-light: 40 15% 75%;
+    --rose: 350 35% 65%;
+    --rose-light: 350 25% 25%;
+    --rose-dark: 350 35% 75%;
+
+    --sidebar-background: 220 18% 12%;
+    --sidebar-foreground: 40 15% 85%;
+    --sidebar-primary: 135 25% 60%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 40 15% 85%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 135 25% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Support for safe areas on notched devices */
+    scroll-padding-top: env(safe-area-inset-top);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+    /* Ensure minimum font size of 16px to prevent iOS zoom on focus */
+    font-size: clamp(1rem, 3vw, 1.125rem);
+    /* Prevent unwanted zooming on iOS */
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Smooth scrolling on mobile */
+    -webkit-touch-callout: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", Georgia, serif;
+    @apply font-medium tracking-tight;
+  }
+
+  /* Input sizing for mobile */
+  input,
+  textarea,
+  select {
+    /* Minimum 16px to prevent iOS zoom on focus */
+    font-size: clamp(1rem, 3vw, 1.125rem);
+    /* Proper tap target size */
+    min-height: 2.75rem;
+  }
+
+  /* Disable zoom on input focus */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select {
+    font-size: 16px; /* Prevent iOS zoom */
+  }
+}
+
+@layer components {
+  /* Mobile-optimized button styles */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium;
+    @apply text-base sm:text-lg;
+    /* Minimum 44px tap target */
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+    @apply shadow-md hover:shadow-lg active:shadow-sm;
+    @apply transition-all duration-300;
+    @apply hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-hero-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium text-base sm:text-lg;
+    min-height: 2.75rem;
+    @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300;
+  }
+
+  .btn-whatsapp {
+    @apply bg-[#25D366] text-white px-6 py-3 rounded-full font-medium;
+    min-height: 2.75rem;
+    @apply shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366];
+  }
+
+  /* Elegant card styles - responsive padding */
+  .card-luxury {
+    @apply bg-card rounded-2xl p-4 sm:p-6 md:p-8 border border-border/50;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-luxury:hover {
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-4px);
+  }
+
+  /* Section containers - responsive padding */
+  .section-padding {
+    @apply py-8 sm:py-12 md:py-20 lg:py-28 xl:py-32;
+  }
+
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4 sm:px-6;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6;
+  }
+
+  /* Text styles - responsive sizing with clamp */
+  .text-display {
+    @apply font-medium leading-tight;
+    font-size: clamp(1.75rem, 8vw, 3.75rem);
+  }
+
+  .text-headline {
+    @apply font-medium leading-snug;
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
+  }
+
+  .text-subheadline {
+    @apply text-muted-foreground leading-relaxed;
+    font-size: clamp(1rem, 3.5vw, 1.5rem);
+  }
+
+  .text-body-large {
+    @apply text-muted-foreground leading-relaxed;
+    font-size: clamp(0.95rem, 3vw, 1.125rem);
+  }
+
+  /* Decorative elements */
+  .divider-sage {
+    @apply w-12 sm:w-16 h-1 bg-primary rounded-full;
+  }
+
+  .blob-decoration {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  /* WhatsApp floating button - safe area aware, bottom nav friendly */
+  .whatsapp-float {
+    @apply fixed bottom-6 right-4 sm:right-6 z-40;
+    @apply bg-[#25D366] text-white;
+    @apply rounded-full shadow-lg hover:shadow-xl;
+    @apply transition-all duration-300 active:scale-95;
+    /* Safe area support */
+    bottom: max(1.5rem, calc(1.5rem + env(safe-area-inset-bottom)));
+    right: max(1rem, calc(1rem + env(safe-area-inset-right)));
+    /* Minimum tap target */
+    width: 3rem;
+    height: 3rem;
+    @apply flex items-center justify-center;
+    animation: pulse-gentle 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-gentle {
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+  }
+
+  /* Form styles - mobile optimized */
+  .input-luxury {
+    @apply w-full px-4 py-3 sm:px-5 sm:py-4 rounded-xl border border-border bg-background;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary;
+    @apply transition-all duration-200;
+    /* Minimum height for touch targets */
+    min-height: 2.75rem;
+    /* Prevent zoom on focus in iOS */
+    font-size: 16px;
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    @apply text-muted-foreground hover:text-foreground transition-colors duration-200;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5;
+    @apply after:bg-primary after:transition-all after:duration-300;
+    @apply hover:after:w-full;
+    /* Minimum touch target */
+    min-height: 2.75rem;
+    @apply flex items-center;
+  }
+
+  .nav-link-active {
+    @apply text-foreground after:w-full;
+  }
+
+  /* Modal/Dialog optimization for mobile */
+  .dialog-content {
+    @apply max-h-[90dvh] sm:max-h-[85dvh] overflow-y-auto;
+  }
+
+  /* Overflow handling for mobile */
+  .mobile-safe {
+    @apply overflow-x-hidden;
+    /* Prevent layout shift from scrollbar */
+    scrollbar-gutter: stable;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Gradient text */
+  .text-gradient-sage {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      hsl(135 18% 42%) 0%,
+      hsl(135 25% 60%) 100%
+    );
+  }
+
+  /* Animation delays */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  /* Safe area utilities */
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+  .pr-safe {
+    padding-right: env(safe-area-inset-right);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pl-safe {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  /* Touch-friendly sizing utilities */
+  .touch-target {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+
+  /* No hover on touch devices */
+  @media (hover: none) {
+    .hover\:scale-110:hover {
+      transform: scale(1);
+    }
+    .hover\:shadow-xl:hover {
+      box-shadow: var(--shadow-medium);
+    }
+    .hover\:after\:w-full:hover::after {
+      width: 0;
+    }
+  }
+
+  /* Reduced motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

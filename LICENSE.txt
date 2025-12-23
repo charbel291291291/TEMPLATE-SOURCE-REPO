@@ -1,0 +1,17 @@
+LICENSE TERMS
+
+This template is licensed for use in a single end product.
+
+You are allowed to:
+- Use the template for personal or client projects
+- Modify the template to fit your needs
+- Deploy the template for commercial use
+
+You are NOT allowed to:
+- Resell, redistribute, or sublicense this template
+- Share the source code publicly
+- Include this template in another template or product for sale
+
+This license applies to one end product per purchase.
+
+© 2025. All rights reserved.

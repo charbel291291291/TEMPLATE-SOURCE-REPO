@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B5C9D6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4DFE6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roomGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8DCC8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9CDBA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky/Window background -->
+  <rect width="1200" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- Floor/Room background -->
+  <rect y="400" width="1200" height="400" fill="url(#roomGradient)"/>
+  
+  <!-- Window frame (top portion) -->
+  <rect x="100" y="50" width="1000" height="350" fill="none" stroke="#9B8B7E" stroke-width="8" opacity="0.3"/>
+  
+  <!-- Soft light patterns (wellness theme) -->
+  <circle cx="200" cy="150" r="120" fill="#FFFFFF" opacity="0.1"/>
+  <circle cx="1000" cy="200" r="150" fill="#FFFFFF" opacity="0.08"/>
+  
+  <!-- Abstract office furniture silhouette -->
+  <rect x="150" y="500" width="200" height="250" fill="#9B8B7E" opacity="0.15" rx="8"/>
+  <rect x="850" y="520" width="180" height="230" fill="#9B8B7E" opacity="0.12" rx="8"/>
+  
+  <!-- Soft geometric shapes (calming composition) -->
+  <circle cx="600" cy="350" r="80" fill="#D4C4B0" opacity="0.15"/>
+  <rect x="400" y="450" width="400" height="2" fill="#9B8B7E" opacity="0.1"/>
+  
+  <!-- Wellness accent - soft plant silhouette -->
+  <ellipse cx="900" cy="600" rx="60" ry="120" fill="#8B9B8E" opacity="0.12"/>
+  <ellipse cx="880" cy="610" rx="25" ry="60" fill="#8B9B8E" opacity="0.1"/>
+  <ellipse cx="920" cy="600" rx="20" ry="70" fill="#8B9B8E" opacity="0.1"/>
+  
+  <!-- Soft horizontal line suggesting calm space -->
+  <line x1="100" y1="400" x2="1100" y2="400" stroke="#9B8B7E" stroke-width="1" opacity="0.15"/>
+</svg>

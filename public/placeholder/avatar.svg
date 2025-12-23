@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8DCC8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4C4B0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="url(#bgGradient)"/>
+  
+  <!-- Abstract circular elements representing a silhouette without facial features -->
+  <circle cx="100" cy="60" r="25" fill="#9B8B7E" opacity="0.3"/>
+  <circle cx="100" cy="65" r="28" fill="#8B7B6E" opacity="0.2"/>
+  
+  <!-- Shoulders/body silhouette -->
+  <ellipse cx="100" cy="140" rx="45" ry="35" fill="#9B8B7E" opacity="0.25"/>
+  
+  <!-- Abstract wellness symbol -->
+  <circle cx="100" cy="100" r="3" fill="#8B7B6E" opacity="0.4"/>
+  <circle cx="95" cy="105" r="2" fill="#8B7B6E" opacity="0.3"/>
+  <circle cx="105" cy="105" r="2" fill="#8B7B6E" opacity="0.3"/>
+  
+  <!-- Decorative lines (abstract, non-facial) -->
+  <line x1="80" y1="120" x2="120" y2="120" stroke="#9B8B7E" stroke-width="1" opacity="0.2"/>
+</svg>

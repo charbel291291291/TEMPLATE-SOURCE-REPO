@@ -1,0 +1,36 @@
+{
+  "brand": {
+    "name": "Your Brand Name",
+    "title": "Professional Services",
+    "tagline": "Helping people move forward",
+    "logo": "/logo.svg"
+  },
+  "hero": {
+    "headline": "Personalized Sessions That Make a Difference",
+    "subheadline": "Professional support tailored to your needs",
+    "image": "/placeholder/hero.svg",
+    "ctaText": "Book a Session"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "This is a short professional bio. Replace this text from the config file without touching code.",
+    "image": "/placeholder/avatar.svg"
+  },
+  "services": [
+    {
+      "title": "One-on-One Sessions",
+      "description": "Personalized sessions focused on growth and clarity."
+    },
+    {
+      "title": "Online Consultations",
+      "description": "Flexible remote sessions wherever you are."
+    }
+  ],
+  "contact": {
+    "email": "hello@example.com",
+    "phone": "+000 000 000",
+    "location": "City, Country",
+    "whatsapp": "+000000000"
+  },
+  "niche": "therapist"
+}
