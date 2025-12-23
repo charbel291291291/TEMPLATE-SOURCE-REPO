@@ -25,7 +25,6 @@ import MessagesManagement from "@/components/admin/MessagesManagement";
 import ServicesManagement from "@/components/admin/ServicesManagement";
 import SettingsManagement from "@/components/admin/SettingsManagement";
 import ClientsManagement from "@/components/admin/ClientsManagement";
-import AuthDebugButton from "@/components/admin/AuthDebugButton";
 import UsersManagement from "@/components/admin/UsersManagement";
 
 type TabType =
@@ -181,7 +180,6 @@ export default function Admin() {
               </h2>
             </div>
             <div className="flex items-center gap-4">
-              <AuthDebugButton />
               <a
                 href="/"
                 target="_blank"
